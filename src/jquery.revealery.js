@@ -6,6 +6,8 @@
 * Revealery, un plugin jQuery pour faire apparaître de manière aléatoire les enfants d'un élément.
 * Développé par l'agence Web MangoLight
 * http://www.mangolight.com
+*
+* Released under the Apache License v2.0.
 */
 (function($){
     $.fn.revealery = function(options,callback){
