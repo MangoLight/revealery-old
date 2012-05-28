@@ -17,14 +17,14 @@
         }, options);
 		
         return this.each(function(){
-            var children = $(this).children().css({'opacity':0}); // Put opacity to 0 for each children
+            var children = $(this).children().stop().css({'opacity':0}); // Put opacity to 0 for each children
             setTimeout(function(){ showObj(); },settings.beginning_delay); // Start to show children after the beginning_delay
 			
 			/* Show the children */
             function showObj(){
                 var random = Math.floor(Math.random() * children.length);
                 var obj = $(children[random]); // obj is a random child
-                obj.animate({'opacity':1},settings.duration); // show that child
+                obj.stop().animate({'opacity':1},settings.duration); // show that child
                 if(settings.recursive) obj.revealery(settings); // call revealery on that object if recursive is true
                 
                 children.splice(random,1); // Remove that child from the children array
