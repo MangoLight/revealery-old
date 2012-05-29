@@ -1,9 +1,6 @@
 Revealery
 =============
 
-Introduction
--------
-
 Revealery is a simple and small (<700 bytes) jQuery plugin that makes slowly appears in a random order the children of an element.
 
 
@@ -17,10 +14,10 @@ To use it, call revealery() on the parent element containing the children you wa
 Options
 -------
 
-_beginning_delay_: Delay before starting to make elements appear (in ms). Default: 300
-_delay_between_: Delay between two apparitions (in ms). Default: 150
-_duration_: Duration of each apparition (in ms). Default: 500
-_recursive_: Apply Revealery on the children of the object. Default: false
+* _beginning_delay_: Delay before starting to make elements appear (in ms). Default: 300
+* _delay_between_: Delay between two apparitions (in ms). Default: 150
+* _duration_: Duration of each apparition (in ms). Default: 500
+* _recursive_: Apply Revealery on the children of the object. Default: false
 
 Demo
 -------
